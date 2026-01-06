@@ -3,7 +3,7 @@ public interface List<E>  {
 
     void add(E element);
 
-    void addByIndex(E element, int index) throws IllegalAccessException;
+    void addByIndex(E element, int index);
 
     /**
      *

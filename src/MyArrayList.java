@@ -50,6 +50,7 @@ public class MyArrayList<E> implements List<E> {
 
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public E getByIndex(int i) {
         if (i >= 0 && i < size) {
@@ -57,6 +58,7 @@ public class MyArrayList<E> implements List<E> {
         } else throw new MyIndexOutBoundsException();
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public E removeByIndex(int i) {
         if (i > size - 1 || i < 0) {
